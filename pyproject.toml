@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "economy-engine"
+version = "0.1.0"
+description = "Gas Tank model for free-tier sustainability"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "sqlalchemy>=2.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4", "pre-commit>=3.7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/economy_engine"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
