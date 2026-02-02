@@ -1,0 +1,26 @@
+site_name: Economy Engine
+site_description: Gas Tank model for free-tier sustainability
+site_url: https://vindicta-platform.github.io/Economy-Engine/
+
+repo_name: vindicta-platform/Economy-Engine
+repo_url: https://github.com/vindicta-platform/Economy-Engine
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: green
+      accent: amber
+  font:
+    text: Outfit
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Gas Tank: gas-tank.md
+  - Ledger: ledger.md
+  - Contributing: contributing.md
+
+plugins:
+  - search
