@@ -15,7 +15,7 @@ The Gas Tank tracks credit balance with hard limits.
 ```python
 class GasTank:
     balance: int
-    
+
     def consume(self, credits: int, operation: str) -> bool
     def refill(self, credits: int) -> None
     def check_available(self, credits: int) -> bool
